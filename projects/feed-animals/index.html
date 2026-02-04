@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Накорми тюленя</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Montserrat:wght=400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="game-container">
+        <a href="../../" class="back-button">Назад к портфолио</a>
+        <h1>Накорми тюленя</h1>
+        <div class="game-info">
+            <div class="score">Очки: <span id="score">0</span></div>
+            <div class="timer">Время: <span id="timer">30</span> сек</div>
+            <button id="resetRecordsButton" class="button sea-button">Обнулить рекорды</button>
+        </div>
+       <div class="game-area">
+    <div class="game-overlay"></div>
+    <div class="seal-container">
+        <img class="animal seal" id="seal" src="image/seal.png" alt="Тюлень">
+        <img class="animal seal-funny hidden" id="seal-funny" src="image/sealfunny.png" alt="Весёлый тюлень">
+    </div>
+    <img class="food hidden" id="food" src="image/fish.png" alt="Рыбка">
+    <button id="startButton" class="button start-button">Старт</button>
+    <div id="gameResult" class="game-result hidden">
+        <div class="result-score">Ваш результат: <span id="finalScore">0</span></div>
+        <div id="newRecordMessage" class="new-record-message hidden">Новый рекорд!</div>
+    </div>
+</div>
+
+        <div class="records">
+            <h2>Личные рекорды</h2>
+            <table id="recordsTable">
+                <thead>
+                    <tr>
+                        <th>Место</th>
+                        <th>Очки</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Рекорды будут добавляться сюда -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
